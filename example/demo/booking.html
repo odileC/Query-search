@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Title</title>
-
     <script src="../../lib/require.js"></script>
     <script src="../../lib/zepto.js"></script>
     <script src="../../lib/spa.js"></script>
@@ -15,19 +14,36 @@
 <body>
 
 <div class="main-viewport">
-    <div class="viewport booking-viewport">
+    <div class="viewport index-viewport" data-no-init="true">
         <style>
-            .booking-viewport {
-                background: darkseagreen;
+            .index-viewport {
+                background: #00b398;
             }
         </style>
-
+        <div class="viewportmid index-viewportmid" data-no-init="true"> 
+        <h1 style="color:#00b398; margin-top:10px; margin-left:10px;">Canvas</h1>        
+    <style>    
+   .index-viewportmid {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+       </style> 
         <div class="viewport-content">
-            booking
-            <button class="js_back"> back </button>
-        </div>
+            <img src="http://thyrsi.com/t6/676/1551633915x2728278811.png" width="450" height="350" />
+            <img src= "http://thyrsi.com/t6/676/1551673830x2890174202.png" width ="250" height = "220" style="position:absolute top:10;left:10"/>
+            <button class="js_back" style="background-color: #00b398;width: 120px;height: 30px; border-radius: 15px;color:white;border-style:none"> Previous</button>
+       <button class="js_tobooking" style="background-color: white;width: 120px;height: 30px; border-radius: 15px;color:#00b398;border-style:solid;
+border-width:1px;"> Next </button> 
 
-        <script type="text/fscript" data-src="./js/booking.js" ></script>
+        <script type="text/fscript" data-src="./js/list.js" ></script>
     </div>
 </div>
 
